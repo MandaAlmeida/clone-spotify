@@ -1,0 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: CircularStd-Black, CircularStd-Bold, CircularStd-Book,
+    CircularStd-Light, CircularStd-Medium, sans-serif;
+  transition: none 0.5s cubic-bezier(0.3, 0, 0.4, 1);
+}
