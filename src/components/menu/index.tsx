@@ -2,7 +2,7 @@ import logo from "./assets/spotify.svg";
 import Home from "./assets/Home.svg";
 import Search from "./assets/Search.svg";
 import Library from "./assets/Library.svg";
-import Coração from "./assets/Coracao.svg";
+import Coracao from "./assets/Coracao.svg";
 import mais from "./assets/mais.svg";
 import language from "./assets/language.svg";
 import NavLink from "./components/nav-link";
@@ -16,7 +16,7 @@ const Menu = () => {
         <section className="container-links-top">
           <a href="/" className="logo-menu">
             <img alt="logo do spotify" src={logo} />
-          </a>{" "}
+          </a>
           <ul className="list-nav-link">
             <NavLink
               className="nav-link-img-container"
@@ -46,7 +46,7 @@ const Menu = () => {
             />
             <NavLink
               className="nav-link-img-bg bg-color"
-              src={Coração}
+              src={Coracao}
               alt="icone musicas curtidas"
               text="Músicas Curtidas"
             />
