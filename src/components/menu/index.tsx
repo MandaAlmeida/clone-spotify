@@ -2,7 +2,7 @@ import logo from "./assets/spotify.svg";
 import Home from "./assets/Home.svg";
 import Search from "./assets/Search.svg";
 import Library from "./assets/Library.svg";
-import Coracao from "./assets/Coracao.svg";
+import Coracao from "./assets/coracao.svg";
 import mais from "./assets/mais.svg";
 import language from "./assets/language.svg";
 import NavLink from "./components/nav-link";
