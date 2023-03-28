@@ -1,0 +1,181 @@
+.annotation-container {
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+
+        .title {
+            font-weight: 700;
+            font-size: 2rem;
+            color: $gray5;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .annotations {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            max-height: 400px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            align-items: center;
+            justify-content: center;
+
+            .annotation {
+                border-radius: 5px;
+                padding: 16px;
+                width: 150px;
+                height: 180px;
+                cursor: pointer;
+                list-style: none;
+                background-color: $primary;
+
+                &-img {
+                    width: 100%;
+                    height: 60%;
+
+
+                    .image-result {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                &-title {
+                    font-weight: 600;
+                    font-size: 1rem;
+                    line-height: 24px;
+                    text-transform: capitalize;
+                }
+
+                &-description {
+                    font-weight: 300;
+                    font-size: 0.8rem;
+                    line-height: 20px;
+                    text-transform: capitalize;
+                    white-space: normal;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    height: 34px;
+                }
+            }
+        }
+    }
+
+    .create-annotations {
+        display: none;
+        position: absolute;
+        background-color: $gray;
+        padding: 10px;
+        width: 90%;
+        height: 70%;
+        border-radius: 5px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+
+        &.active {
+            display: flex;
+        }
+
+        .create-annotations-header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+            align-items: center;
+
+            .title {
+                font-weight: 500;
+                font-size: 2rem;
+                line-height: 48px;
+                color: $gray5;
+            }
+
+            .close-annotation {
+                font-size: 2rem;
+                color: $gray5;
+                cursor: pointer;
+
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+
+
+
+        .form-wrapper {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+
+            .text {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                .form-title {
+                    height: 42px;
+                    border: none;
+                    border-bottom: 2px solid $primary;
+                    outline: none;
+                    width: 100%;
+                }
+
+                .form-description {
+                    border: none;
+                    border-bottom: 2px solid $primary;
+                    outline: none;
+                    resize: none;
+                }
+            }
+        }
+
+        &-bnt {
+            height: 40px;
+            width: 60%;
+            border: 1px solid $primary;
+            background-color: transparent;
+            color: $primary;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+
+        .form-color {
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+
+
+    @media (max-width: 1024px) {
+        .left {
+            .annotations {
+                padding-bottom: 340px;
+            }
+        }
+    }
+
+}

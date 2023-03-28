@@ -1,14 +1,16 @@
 import Header from "../components/header";
+import Main from "../components/main";
 import Menu from "../components/menu";
 import "./styles.css";
 
-function Home() {
+const Home = () => {
   return (
-    <main className="main">
+    <div className="container-home">
       <Header />
       <Menu />
-    </main>
+      <Main />
+    </div>
   );
-}
+};
 
 export default Home;

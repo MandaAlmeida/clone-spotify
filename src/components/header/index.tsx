@@ -1,8 +1,8 @@
 import Button from "./components/button";
-import Link from "./components/link";
+import Link from "../link/link";
 import "./styles.css";
 
-function Header() {
+const Header = () => {
   return (
     <div className="container-header">
       <header className="header">
@@ -19,14 +19,30 @@ function Header() {
         <div className="container">
           <section>
             <ul className="header-list">
-              <Link text="Premium" />
-              <Link text="Suporte" />
-              <Link text="Baixar" />
+              <Link
+                classNameContainer="header-list-link"
+                classNameLink="header-link"
+                text="Premium"
+              />
+              <Link
+                classNameContainer="header-list-link"
+                classNameLink="header-link"
+                text="Suporte"
+              />
+              <Link
+                classNameContainer="header-list-link"
+                classNameLink="header-link"
+                text="Baixar"
+              />
             </ul>
           </section>
           <section className="header-barra-divisão"></section>
           <section className="container">
-            <Link text="Inscrever-se" />
+            <Link
+              classNameContainer="header-list-link"
+              classNameLink="header-link"
+              text="Inscrever-se"
+            />
             <Button
               classNameButton="button-login"
               classNameText="text-button-login"
@@ -37,6 +53,6 @@ function Header() {
       </header>
     </div>
   );
-}
+};
 
 export default Header;

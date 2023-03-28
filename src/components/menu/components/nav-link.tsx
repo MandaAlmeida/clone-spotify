@@ -5,7 +5,7 @@ interface NavLinkProps {
   className: string;
 }
 
-function NavLink(props: NavLinkProps) {
+const NavLink = (props: NavLinkProps) => {
   const { src, alt, text, className } = props;
   return (
     <li className="nav-link">
@@ -17,6 +17,6 @@ function NavLink(props: NavLinkProps) {
       </a>
     </li>
   );
-}
+};
 
 export default NavLink;

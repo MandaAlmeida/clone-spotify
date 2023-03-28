@@ -1,5 +1,7 @@
 .container-header {
   grid-area: main-view;
+  position: absolute;
+  width: 100%;
 }
 
 .header {
@@ -9,8 +11,8 @@
   padding: 16px 32px;
   background-color: rgba(0, 0, 0, 0.5);
   height: 64px;
-  position: relative;
-  width: 100%;
+  width: 80.6%;
+  position: fixed;
   z-index: 10;
 }
 

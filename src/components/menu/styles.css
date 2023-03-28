@@ -1,13 +1,13 @@
-::root {
-  --nav-bar-width: width;
+.menu-container {
+  grid-area: nav-bar;
+  width: 267px;
 }
 
 .menu {
-  grid-area: nav-bar;
+  position: fixed;
   background-color: #000;
-  width: 304px;
   height: 100%;
-  position: relative;
+  width: 267px;
 }
 
 .logo-menu img {
@@ -78,11 +78,17 @@
   text-align: start;
 }
 
+.link-bottom:hover {
+  text-decoration: underline;
+}
+
 .container-links-bottom {
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
   padding: 0 24px;
-  margin: 32px 0;
+  margin: 0 0 32px;
+  height: 50%;
 }
 
 .button-language-img {

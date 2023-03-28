@@ -1,0 +1,121 @@
+.main {
+  grid-area: main-view;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 88px 32px 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.main-nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.main-nav-link-container {
+  list-style: none;
+}
+
+.main-nav-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.text {
+  font-size: 0.875rem;
+  color: #b3b3b3;
+}
+
+.main-nav-link:hover {
+  text-decoration: underline;
+}
+
+.main-card-list {
+  list-style: none;
+}
+
+.main-card {
+  display: grid;
+  background: #181818;
+  padding: 16px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  width: 186.6px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main-card:hover {
+  background: #282828;
+}
+
+.main-card-section-img {
+  position: relative;
+}
+
+.main-card-img {
+  border-radius: 4px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.main-card-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer;
+  background-color: #1ed760;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  bottom: 27px;
+  right: 8px;
+  opacity: 0;
+}
+
+.main-card:hover .main-card-play {
+  opacity: 1;
+}
+
+.main-card-section-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-card-title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.main-card-text {
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 44.8px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  color: #a7a7a7;
+  margin-top: 4px;
+}
+
+.main-list-card {
+  display: flex;
+  justify-content: space-between;
+}

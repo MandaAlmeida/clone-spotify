@@ -4,7 +4,7 @@ interface ButtonProps {
   text?: string;
 }
 
-function Button(props: ButtonProps) {
+const Button = (props: ButtonProps) => {
   const { classNameButton, classNameText, text } = props;
 
   return (
@@ -12,6 +12,6 @@ function Button(props: ButtonProps) {
       <span className={classNameText}>{text}</span>
     </button>
   );
-}
+};
 
 export default Button;

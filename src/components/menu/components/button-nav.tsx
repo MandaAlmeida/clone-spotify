@@ -4,7 +4,7 @@ interface ButtonProps {
   alt: string;
 }
 
-function Button(props: ButtonProps) {
+const Button = (props: ButtonProps) => {
   const { text, src, alt } = props;
 
   return (
@@ -13,6 +13,6 @@ function Button(props: ButtonProps) {
       {text}
     </button>
   );
-}
+};
 
 export default Button;
